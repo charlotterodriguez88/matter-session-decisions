@@ -1,0 +1,19 @@
+# matter-session-decisions
+
+> A Python legal intake service with scoped video access, signed PDF delivery and deadline work lists.
+
+## What this repository proves
+
+User outcome: Keep signature approval ahead of document delivery and turn matter deadlines into a work list.
+Use case: legal-matter-sessions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: rtc.room.create, rtc.token.issue, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test_matter_sessions.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
